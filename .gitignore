@@ -1,2 +1,4 @@
 */*/__pycache__/*
 Noticias/__pycache__/*
+.scrapy/
+mega.json

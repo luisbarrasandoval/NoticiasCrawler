@@ -8,12 +8,21 @@ import scrapy
 from dataclasses import dataclass
 from datetime import datetime
 
-@dataclass
+from yaml import serialize
+
 class NoticiasItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title: str
-    author: str
-    content: str
-    category: list[str] = field(serializer=str)
-    publish_date: datetime = field(serializer=str)
+    title = scrapy.Field()
+    url = scrapy.Field()
+    img = scrapy.Field()
+    description = scrapy.Field()
+    author = scrapy.Field()
+    publish_date = scrapy.Field(
+        serializer=str
+    )
+    category = scrapy.Field(
+        serializer=str
+    )
+    content = scrapy.Field()
+    
