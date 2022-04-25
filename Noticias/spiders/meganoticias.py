@@ -9,7 +9,7 @@ URL = '.top a'
 TITLE = '.bottom a ' # h1 o h2::text
 IMG = '.top a img'
 
-PUBLISH_DATE = 'div.contenedor-contenido div.fechaHora::text'
+PUBLISH_DATE = 'div.fechaHora time::text'
 
 
 class MeganoticiasSpider(scrapy.Spider):
@@ -47,17 +47,13 @@ class MeganoticiasSpider(scrapy.Spider):
         yield item
 
     def parse_publish_date(self, response):
-        publish_date = response.css(PUBLISH_DATE).get()
-        try:
-            # mal
-            publish_date = publish_date[0:10] + ' ' + publish_date[11:19]
-            publish_date = datetime.strptime(publish_date, '%Y-%m-%d %H:%M:%S')
-        except:
-            publish_date = None
+        # format 24 abr. 2022 - 21:18 hrs
+        publish_date = response.css(PUBLISH_DATE).get().strip()
         return publish_date
     
     def parse_categories(self, response):
         categories = []
         for category in response.css(".contenedor-temas li"):
             text = category.css('a::text').get().strip()
+            categories.append(text)
         return categories

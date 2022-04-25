@@ -21,8 +21,6 @@ class NoticiasItem(scrapy.Item):
     publish_date = scrapy.Field(
         serializer=str
     )
-    category = scrapy.Field(
-        serializer=str
-    )
+    category = scrapy.Field()
     content = scrapy.Field()
     
