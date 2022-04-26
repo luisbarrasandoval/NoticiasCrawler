@@ -2,3 +2,4 @@
 Noticias/__pycache__/*
 .scrapy/
 mega.json
+scrapinghub.yml

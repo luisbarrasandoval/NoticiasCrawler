@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: NoticiasSpyder
+Version: 1.0
+Summary: Obtiene noticias de diferentes fuente de noticias en Chile
+Home-page: https://github.com/luisbarrasandoval/NoticiasCrawler
+Author: Luis Barra
+Author-email: luisbarradev@gmail.com
+License: MIT
+Description: Obtiene noticias de diferentes fuente de noticias en Chile
+Platform: Debian Gnu/Linux
