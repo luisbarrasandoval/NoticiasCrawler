@@ -2,9 +2,9 @@
 
 ## Araña web para sitios de noticias chilenas
 ### Soporte actual
-- <a href='https://www.meganoticias.cl/'>Mega Noticias</a> *no terminado*
+- <a href='https://www.meganoticias.cl/'>Mega Noticias</a> `no terminado`
+- <a href='https://www.biobiochile.cl/'>Radio Bio Bio</a> `no terminado`
 ### Soporte futuro
-- radiobiobio
 - la tercera
 - t13
 
