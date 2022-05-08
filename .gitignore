@@ -3,3 +3,6 @@ Noticias/__pycache__/*
 .scrapy/
 mega.json
 scrapinghub.yml
+build/
+.idea
+NoticiasSpyder.egg-info/*
